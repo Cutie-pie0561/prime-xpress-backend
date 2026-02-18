@@ -1,0 +1,73 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 1cm;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+/* Navbar-specific logo sizing to keep the header compact */
+.navbar .logo img {
+  max-height: 48px !important; /* adjust this value as needed */
+  height: auto !important;
+  width: auto !important;
+  display: block;
+}
+
+/* If the logo wrapper adds large padding, reduce it only for navbar */
+.navbar .logo {
+  padding: 0.25rem;
+  max-width: 220px;
+  overflow: hidden;
+}
+
+/* Make navbar layout predictable and keep logo aligned */
+.navbar {
+  width: 100%;
+  box-sizing: border-box;
+}
+.navbar .nav-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .nav-links {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
